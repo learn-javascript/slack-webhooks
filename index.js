@@ -6,7 +6,7 @@ var Sandbox = new (require('sandbox'));
 
 
 
-server.connection({ port: 3000 });
+server.connection({ port: config.port });
 
 server.start(function () {
     console.log('Server running at:', server.info.uri);
