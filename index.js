@@ -25,10 +25,10 @@ server.route({
                 response += out.console.reduce(function(s, c){
                     return s + c.replace('\n', ' ');
                 }, '');
-                return reply(response);
+                return reply({text : response});
             }
             response = out.result.split('\n').slice(0,3).join('\n');
-            reply(response);
+            reply({text : response});
         });
     }
 });
