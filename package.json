@@ -10,6 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "hapi": "^8.6.1",
-    "sandbox": "^0.8.6"
+    "slack-webhook-jseval": "^1.0.3"
   }
 }
