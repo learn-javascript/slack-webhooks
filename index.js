@@ -1,7 +1,7 @@
 var Hapi = require('hapi');
 var server = new Hapi.Server();
 var config = require('./config');
-process.env.config = config;
+process.env.slackToken = config.slackToken;
 
 
 server.connection({ port: config.port });
